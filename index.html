@@ -1,16 +1,113 @@
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title> Yadir </title>
+<title>My Webpage</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: SkyBlue;
+  padding: 15px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: LightSlateGrey;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: SkyBlue;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body style="background-color:FloralWhite;">
-
-<h1> Yadir Rendon website</h1>
-<a href="aboutme.html">About me Page</a>
-<a href="interests.html">My interest Page</a>
-<a href="favoritesong.html">Favorite song Page</a>
-
+<header>
+  <h2>Welcome to my Webpage</h2>
+</header>
+<section>
+  <nav>
+    <ul>
+	<h3>Links to my other assignments</h3>
+      <li><a href="aboutme.html">About me Page</a></li>
+      <li><a href="interests.html">My interest Page</a></li>
+      <li><a href="favoritesong.html">Favorite song Page</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+   <p>This is the article section. </p>
+  </article>
+</section>
+<footer>
+  <p>Footer</p>
+</footer>
 </body>
 </html>
