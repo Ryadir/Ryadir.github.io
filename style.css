@@ -1,4 +1,4 @@
-<style>
+
 * {
   box-sizing: border-box;
 }
@@ -10,7 +10,7 @@ body {
 /* Style the header */
 header {
   background-color: SkyBlue;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   font-size: 35px;
   color: white;
@@ -34,8 +34,8 @@ nav ul {
 article {
   float: left;
   padding: 20px;
-  width: 60%;
-  background-color:Black;
+  width: 80%;
+  background-color: LightSlateGrey;
   height: 300px; /* only for demonstration, should be removed */
 }
 
@@ -61,4 +61,3 @@ footer {
     height: auto;
   }
 }
-</style>
